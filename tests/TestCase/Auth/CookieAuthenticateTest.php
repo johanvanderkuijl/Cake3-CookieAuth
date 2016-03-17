@@ -97,6 +97,22 @@ class CookieAuthenticateTest extends TestCase
         $result = $this->auth->authenticate($this->request, $this->response);
         $this->assertFalse($result);
     }
+    
+    /**
+     * test authenticateNullPassword
+     *
+     * @return void
+     */
+    public function testAuthenticateNullPassword()
+    {
+        $this->registry->Cookie->write(
+            'CookieAuth',
+            ['username' => 'Rubyan', 'password' => null]
+        );
+
+        $result = $this->auth->authenticate($this->request, $this->response);
+        $this->assertNotNull($result);
+    }
 
     /**
      * test authenticateFail

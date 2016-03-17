@@ -2,3 +2,4 @@
 /vendor
 /coverage
 /phpunit.xml
+/nbproject/private/

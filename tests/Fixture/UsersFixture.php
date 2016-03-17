@@ -37,6 +37,10 @@ class UsersFixture extends TestFixture
         [
             'username' => 'Larry',
             'password' => 'passlarry'
+        ],
+        [
+            'username' => 'Rubyan',
+            'password' => null
         ]
     ];
 }
