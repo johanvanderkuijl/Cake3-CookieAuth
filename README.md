@@ -112,5 +112,14 @@ if($this->request->data('remember_me')) {
 }
 ```
 
+If you use LDAP for authentication you don't want to store the password obviously.
+You can set the password to null when writing the cookie.
+``` php
+	$this->Cookie->write('CookieAuth', [
+		'username' => $this->request->data('username'),
+		'password' => null
+	]);
+```
+
 ## Contribute
 [Follow this guide to contribute](https://github.com/Xety/Cake3-CookieAuth/blob/master/CONTRIBUTING.md)
