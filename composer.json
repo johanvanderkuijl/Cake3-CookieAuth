@@ -1,5 +1,5 @@
 {
-    "name": "xety/cake3-cookieauth",
+    "name": "rubyan/cake3-cookieauth",
     "type": "cakephp-plugin",
     "description": "A simple Cake3 plugin to authenticate users with Cookies.",
     "keywords": ["cakephp", "cake3", "plugin", "cookie", "auth", "authenticate", "login"],
@@ -14,6 +14,11 @@
             "name": "Xety",
             "email": "zoro.fmt@gmail.com",
             "homepage": "https://github.com/Xety"
+        },
+        {
+            "name": "Rubyan",
+            "email": "jvdkuijl@gmail.com",
+            "homepage": "https://github.com/Rubyan"
         }
     ],
     "require": {

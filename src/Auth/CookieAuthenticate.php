@@ -20,7 +20,7 @@ class CookieAuthenticate extends BaseAuthenticate
     public function __construct(ComponentRegistry $registry, array $config = [])
     {
         $this->_registry = $registry;
-        $this->config($config);
+        $this->setConfig($config);
     }
 
     /**
@@ -40,12 +40,12 @@ class CookieAuthenticate extends BaseAuthenticate
         }
 
         $cookies = $this->_registry->Cookie->read('CookieAuth');
-        if (empty($cookies)) {
+        if (empty($cookies)) { 
             return false;
         }
 
         extract($this->_config['fields']);
-        if (empty($cookies[$username])) {
+        if (empty($cookies[$username])) { // allow empty password
             return false;
         }
 
