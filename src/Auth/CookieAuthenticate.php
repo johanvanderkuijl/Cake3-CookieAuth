@@ -45,7 +45,7 @@ class CookieAuthenticate extends BaseAuthenticate
         }
 
         extract($this->_config['fields']);
-        if (empty($cookies[$username])) {
+        if (empty($cookies[$username])) { // allow empty password
             return false;
         }
 
