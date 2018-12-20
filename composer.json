@@ -23,7 +23,7 @@
     ],
     "require": {
         "php": ">=5.4.16",
-        "cakephp/cakephp": "~3.0"
+        "cakephp/cakephp": "~3.4"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*",
