@@ -1,5 +1,5 @@
 <?php
-namespace Xety\Cake3CookieAuth\Test\Fixture;
+namespace Rubyan\Cake3CookieAuth\Test\Fixture;
 
 use Cake\TestSuite\Fixture\TestFixture;
 

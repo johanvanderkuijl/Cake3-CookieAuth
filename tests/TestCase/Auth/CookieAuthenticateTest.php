@@ -1,5 +1,5 @@
 <?php
-namespace Xety\Cake3CookieAuth\Test\TestCase\Auth;
+namespace Rubyan\Cake3CookieAuth\Test\TestCase\Auth;
 
 use Cake\Controller\ComponentRegistry;
 use Cake\Controller\Controller;
@@ -12,7 +12,7 @@ use Cake\ORM\TableRegistry;
 use Cake\Routing\Router;
 use Cake\TestSuite\TestCase;
 use Cake\Utility\Security;
-use Xety\Cake3CookieAuth\Auth\CookieAuthenticate;
+use Rubyan\Cake3CookieAuth\Auth\CookieAuthenticate;
 
 class CookieAuthenticateTest extends TestCase
 {
@@ -22,7 +22,7 @@ class CookieAuthenticateTest extends TestCase
      *
      * @var array
      */
-    public $fixtures = ['plugin.Xety\Cake3CookieAuth.users'];
+    public $fixtures = ['plugin.Rubyan\Cake3CookieAuth.users'];
 
     /**
      * setup
@@ -37,7 +37,7 @@ class CookieAuthenticateTest extends TestCase
         Router::setRequestInfo($this->request);
         $this->response = $this->getMock('Cake\Network\Response');
 
-        Security::salt('Xety-Cake3CookieAuth_Xety-Cake3CookieAuth');
+        Security::salt('Rubyan-Cake3CookieAuth_Rubyan-Cake3CookieAuth');
         $this->registry = new ComponentRegistry(new Controller($this->request, $this->response));
         $this->registry->load('Cookie');
         $this->registry->load('Auth');

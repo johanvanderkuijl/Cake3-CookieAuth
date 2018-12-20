@@ -1,5 +1,5 @@
 <?php
-namespace Xety\Cake3CookieAuth\Auth;
+namespace Rubyan\Cake3CookieAuth\Auth;
 
 use Cake\Auth\BaseAuthenticate;
 use Cake\Controller\ComponentRegistry;

@@ -1,22 +1,15 @@
 # Cake3 CookieAuth
-A simple Cake3 plugin to authenticate users with Cookies. This plugin is based on the awesome plugin [FriendsOfCake/Authenticate](https://github.com/FriendsOfCake/Authenticate/tree/cake3) but with a different setup.
-
-[![Build Status](https://img.shields.io/travis/Xety/Cake3-CookieAuth.svg?style=flat-square)](https://travis-ci.org/Xety/Cake3-CookieAuth)
-[![Coverage Status](https://img.shields.io/coveralls/Xety/Cake3-CookieAuth/master.svg?style=flat-square)](https://coveralls.io/r/xety/Cake3-CookieAuth)
-[![Scrutinizer](https://img.shields.io/scrutinizer/g/Xety/Cake3-CookieAuth.svg?style=flat-square)](https://scrutinizer-ci.com/g/Xety/Cake3-CookieAuth)
-[![Latest Stable Version](https://img.shields.io/packagist/v/Xety/Cake3-CookieAuth.svg?style=flat-square)](https://packagist.org/packages/xety/cake3-cookieauth)
-[![Total Downloads](https://img.shields.io/packagist/dt/xety/cake3-cookieauth.svg?style=flat-square)](https://packagist.org/packages/xety/cake3-cookieauth)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://packagist.org/packages/xety/cake3-cookieauth)
+A simple Cake3 plugin to authenticate users with Cookies. This plugin is based on the awesome plugin [Xety/Cake3-Cookieauth](https://github.com/Xety/Cake3-CookieAuth) but with an option to allow empty passwords. It has also been fixed for CakePHP 3.7
 
 ## Requirements
 * CakePHP 3.X
 
 ## Installation
-Run : `composer require xety/cake3-cookieauth:1.*`
+Run : `composer require rubyan/cake3-cookieauth:1.*`
 Or add it in your `composer.json`:
 ``` php
 "require": {
-	"xety/cake3-cookieauth": "1.*"
+	"rubyan/cake3-cookieauth": "1.*"
 },
 ```
 

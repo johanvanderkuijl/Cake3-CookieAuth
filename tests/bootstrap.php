@@ -103,4 +103,4 @@ Log::config([
     ]
 ]);
 
-Plugin::load('Xety/Cake3CookieAuth', ['path' => ROOT]);
+Plugin::load('Rubyan/Cake3CookieAuth', ['path' => ROOT]);
